@@ -1,0 +1,188 @@
+
+/*---- VARIABLES -----*/
+@mixin display {
+  display: grid;
+  justify-content: center;
+}
+
+@mixin input {
+    width: 60%;
+   padding: 25px; 
+   border-radius: 4px;
+   box-sizing: border-box; 
+   margin-top: 6px; 
+   margin-bottom: 16px; 
+   resize: vertical;
+   background-color: #f2f2f2;
+}
+
+@mixin hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+$header-color: #e3e2e2;
+$position-rel: relative;
+$width-100vw:99vw;
+$margin-percent-5: 5%;
+
+
+$font-size: 23px;
+
+$contact-color: rgb(154, 152, 152);
+$scroll-up-color: #000;
+
+
+
+.container-slide {
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: auto;
+  }
+
+  .h1-text {
+    z-index: 100;
+  }
+  
+  .text-introduction {
+    font-family: 'text-introduction';
+    font-size: 35px;
+    display: grid;
+    justify-content: center;
+    color: #d9dce6;
+  }
+  
+  .text-developer {
+    font-family:  'text-developer';
+    font-size: 25px;
+    display: grid;
+    justify-content: center;
+        color: #d9dce6;
+  }
+
+  .xx {
+    position: absolute;
+    width: 100vw;
+    top:0%;
+    height:100vh;
+  }
+  
+  .slideshow {
+    position: relative;
+    margin-top:-1%;
+  }
+  
+  .slide {
+    position: relative;
+    display: none;
+  }
+  
+  .slide.is-active {
+    display: block;
+  }
+  
+  .controls {
+    position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30em;
+  width: 99vw;
+  .prev, .next {
+    &:hover {
+     @include hover;
+    }
+  } 
+}
+  
+  .controls button {
+    padding: 70px;
+    border: none;
+    font-size: 2.5rem;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10%;
+
+  }
+
+  
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+.navbar {
+    left: 0%;
+    top: 10%;
+    display: flex;
+    z-index: 0;
+  }
+
+  
+  .navbar > ul{
+  list-style: none;
+  }
+  
+  li > a {
+    display: inline-block;
+    padding: 10px 10px;
+    color: #d9dce6;
+    font-size: 25px;
+    text-decoration: none;
+    font-family:'super-text'
+  }
+.menu {
+  display: none;
+}
+
+.menu-line {
+  
+}
+
+.media-icons {
+  position: relative;
+  display: grid;
+  justify-content: center;
+ grid-template-columns: repeat(4, 70px);
+ margin-top: 15%;
+ margin-left: 2%;
+  span {
+    &:hover {
+      @include hover;
+    }
+  }
+  }
+
+.fab, .fas, .arrow-text {
+  font-size: 25px;
+  color: #fff;
+}
+
+
+.scroll_down {
+  position: relative;
+  padding: 5%;
+  display: grid;
+  justify-content: center;
+}
+
+.fas.fa-arrow-down {
+  display: grid;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  &:hover {
+    @include hover;
+}
+
+}
+
+  
+

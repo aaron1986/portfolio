@@ -1,0 +1,38 @@
+.fas.fa-arrow-up {
+    @include display;
+    color: $scroll-up-color;
+    position: $position-rel;
+  }
+
+  .arrow-text-up {
+    @extend .fas.fa-arrow-up;
+    font-size: 25px;
+    color: $scroll-up-color;
+    font-weight: 400;
+  }
+
+  .scroll {
+    position: $position-rel;
+    padding: 10%;
+    @include display;
+  }
+
+  /* Cookie Code */
+ #consent-popup{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  right:0;
+  padding: 2rem;
+  background-color: #292929;
+  opacity: 1;
+  .hidden-cookies {
+    opacity: 1;
+   }
+
+   p {
+    font-size: 13px;
+    color: #a5a5a5;
+   }
+ }
+

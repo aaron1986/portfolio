@@ -1,0 +1,47 @@
+
+.contact {
+    margin-top: $margin-percent-5;
+    font-size: 30px;
+    color: black;
+    font-family: 'contact-text';
+    text-align: center;
+    @include display;
+
+    form, .mb-3 {
+        display: grid;
+        justify-items: center;
+        width: 95vw;
+    }
+    label {
+        font-size: $font-size;
+    }
+
+    .form-label-name {
+        margin-top:1%;
+    }
+    .form-label-email, .form-label-subject {
+        margin-top:5%;
+    }
+
+    input#name, input#email, textarea#subject {
+        font-size: $font-size;
+    }
+	
+
+    input, textarea {
+        width: 200px;
+    }
+    .submit-btn {
+        background-color: $contact-color;
+        margin-top: $margin-percent-5;
+    }
+    .invalid-feedback {
+        text-align: center;
+    
+        }
+
+    span#name-error, span#email-error, span#subject-error {
+            color: red;
+          }
+        
+}
